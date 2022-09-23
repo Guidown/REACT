@@ -1,9 +1,9 @@
-import logo from "./logo.svg";
-import "./App.css";
-import Contador from "./componentes/contador";
-import navbar from "./componentes/navbar";
-function App() {
-  return <nav class="navbar navbar-expand-lg bg-light">
+import form from "./form";
+
+const navbar = () => {
+  return (
+    <>
+      <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             Navbar
@@ -66,7 +66,9 @@ function App() {
             <form />
           </div>
         </div>
-      </nav><navbar />;
-}
+      </nav>
+    </>
+  );
+};
 
-export default App;
+export default navbar;
